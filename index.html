@@ -1,1 +1,123 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <!-- Requirement 3: Logo/Icon near main heading -->
+    <img src="https://via.placeholder.com/50" alt="Expense Tracker Logo" width="50">
+    <h1>Personal Expense Tracker</h1>
+  </header>
+
+  <main>
+    <!-- Requirement 4: Collapsible Details/Summary element -->
+    <section class="instructions-section">
+      <details>
+        <summary>How to use this tracker</summary>
+        <p>Use the form below to enter your daily expenses. Fill in the item name, amount, select a category, pick a date, and click "Add Expense" to record your spending.</p>
+      </details>
+    </section>
+
+    <!-- Requirement 2: Upgraded Add Expense Form -->
+    <section class="add-expense-section">
+      <h2>Add New Expense</h2>
+      <form>
+        <div class="form-group">
+          <label for="expense-name">Expense Name:</label>
+          <input type="text" id="expense-name" name="expense-name" placeholder="e.g., Groceries">
+        </div>
+
+        <div class="form-group">
+          <label for="expense-amount">Amount ($):</label>
+          <input type="number" id="expense-amount" name="expense-amount" placeholder="0.00" step="0.01">
+        </div>
+
+        <div class="form-group">
+          <label for="expense-category">Category:</label>
+          <select id="expense-category" name="expense-category">
+            <option value="food">Food</option>
+            <option value="transport">Transport</option>
+            <option value="rent">Rent</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="expense-date">Date:</label>
+          <input type="date" id="expense-date" name="expense-date">
+        </div>
+
+        <button type="button" id="add-btn">Add Expense</button>
+      </form>
+    </section>
+
+    <!-- Requirement 1: Expense Table -->
+    <section class="expenses-section">
+      <h2>Expense History</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Weekly Groceries</td>
+            <td>$120.50</td>
+            <td>Food</td>
+            <td>2026-09-25</td>
+          </tr>
+          <tr>
+            <td>Bus Pass</td>
+            <td>$45.00</td>
+            <td>Transport</td>
+            <td>2026-09-26</td>
+          </tr>
+          <tr>
+            <td>Monthly Rent</td>
+            <td>$850.00</td>
+            <td>Rent</td>
+            <td>2026-09-01</td>
+          </tr>
+          <tr>
+            <td>Movie Ticket</td>
+            <td>$15.00</td>
+            <td>Entertainment</td>
+            <td>2026-09-28</td>
+          </tr>
+          <tr>
+            <td>Electricity Bill</td>
+            <td>$65.20</td>
+            <td>Other</td>
+            <td>2026-09-29</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Requirement 3: Embedded YouTube Video -->
+    <section class="media-section">
+      <h2>Budgeting Tips</h2>
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/sVKQn2IftKc" 
+        title="Budgeting Basics Video" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+    </section>
+  </main>
+
+</body>
+</html>
