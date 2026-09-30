@@ -1,1 +1,105 @@
+/* General Layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
 
+header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+section {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Requirement 4: Button Cursor */
+button {
+  padding: 10px 18px;
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1a252f;
+}
+
+/* Requirement 1: Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Requirement 1 */
+}
+
+/* Requirement 5: Descendant Selector (.expenses-section td) */
+.expenses-section td {
+  padding: 12px; /* Requirement 1: Padding inside cells */
+  border: 1px solid #ddd;
+}
+
+.expenses-section th {
+  padding: 12px;
+  border: 1px solid #ddd;
+  background-color: #2c3e50; /* Requirement 1: Colored header row */
+  color: white;
+  text-align: left;
+}
+
+/* Requirement 1 & 5: Position-based Pseudo-class (tr:nth-child(even)) */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Requirement 1: Alternating background */
+}
+
+/* Requirement 4: Table Row Hover State */
+tbody tr:hover {
+  background-color: #e2e8f0; /* Requirement 4: Subtle hover change */
+}
+
+/* Requirement 5: Direct Child Selector (.add-expense-section > h2) */
+.add-expense-section > h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 5px;
+}
+
+/* Requirement 5: Focus State for Inputs */
+input:focus, select:focus {
+  outline: 2px solid #3498db;
+  background-color: #f0f8ff;
+}
+
+/* Requirement 5: Negation Pseudo-class */
+input:not([type="button"]) {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
